@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home | Culture Kicks</title>
+        <link rel="icon" href="../Assets/Pictures/Logos/Logo4.png" type="image/x-icon"> <!--favicon-->
+        <link rel="stylesheet" href="index.css"> <!-- Links the CSS file -->
+        <link rel="stylesheet" href="../Global.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> <!-- Links the Font Awesome Icons -->
+    </head>
+
+    <body>
+        
+        
+        <!-- Navigational Bar with Logo, Other Page Links, and User Account -->
+        <div class="navbar">
+            <a href="index.html"><img src="../Assets/Pictures/Logos/Logo4.png" alt="Logo" class="logo" > </a> <!-- Logos/ refers to the file path -->
+            <div class="nav-links">
+                <a href="index.html">Home</a> 
+                <a href="../ShopPage/Shop.html">Shop</a>
+                <a href="../OffersPage/Offers.html">Offers</a>
+                <a href="../AboutUsPage/AboutUs.html">About Us</a>
+            </div> 
+            <!-- Login, Sign Up and Login Icon -->
+            <div class="user-account-container">
+                <!-- Show these buttons only if the user is not logged in -->
+                <a href="../LoginPage/Login.html" class="login-signup-button" id="loginButton">Login</a>
+                <a href="../SignupPage/Signup.html" class="login-signup-button" id="signupButton">Sign Up</a>
+                <!-- Show this icon only if the user is logged in -->
+                <button class="icon-button" aria-label="UserInfo" id="profileIcon"><i class="fa-solid fa-user"></i></button>
+                <div class="logout-container" id="logoutContainer" style="display: none;">
+                    <button class="logout-button" id="logoutButton">Logout</button>
+                </div>
+            </div>
+        </div>
+        
+        <!--BreadCrumbs-->
+        <div class="breadcrumbs">
+            <a href="index.html">Home</a>
+        </div>
+
+        <!-- Banner Section -->
+        <div class="banner-container">
+            <div class="text-overlay">
+                <h1>Welcome to CultureKicks </h1>
+                <p class="slogan"> A Door to the world of Sneakers! </p>
+                <a href="../ShopPage/Shop.html" class="explore-button">Explore</a> <!-- Directed towards the Shop page -->
+            </div>
+            
+            <!-- Slideshow -->
+            <div class="slideshow">
+                <img class="slide active" src="../Assets/Pictures/Banner/banner1.jpg" alt="Sneaker Pic1">
+                <img class="slide" src="../Assets/Pictures/Banner/banner2.jpg" alt="Sneaker Pic2">
+                <img class="slide" src="../Assets/Pictures/Banner/banner3.jpg" alt="Sneaker Pic3">
+                <img class="slide" src="../Assets/Pictures/Banner/banner4.jpg" alt="Sneaker Pic4">
+                <img class="slide" src="../Assets/Pictures/Banner/banner5.jpg" alt="Sneaker Pic5">
+                <img class="slide" src="../Assets/Pictures/Banner/banner6.jpg" alt="Sneaker Pic6">
+                <img class="slide" src="../Assets/Pictures/Banner/banner7.jpg" alt="Sneaker Pic7">
+            </div>
+        </div>
+
+        <!-- Brand Logos Section -->
+        <div class="brand-logos-container">
+            <button class="arrow left-arrow">&#10094;</button> <!-- Left scroll button -->
+            <div class="logos-scroll">
+                <!-- Brand Logos -->
+                <div class="logo-container"><img src="../Assets/Pictures/Logos/nike.png" alt="Nike Logo" class="brand-logo"></div>
+                <div class="logo-container"><img src="../Assets/Pictures/Logos/vans.png" alt="Vans Logo" class="brand-logo"></div>
+                <div class="logo-container"><img src="../Assets/Pictures/Logos/puma.png" alt="Puma Logo" class="brand-logo"></div>
+                <div class="logo-container"><img src="../Assets/Pictures/Logos/adidas.png" alt="Adidas Logo" class="brand-logo"></div>
+                <div class="logo-container"><img src="../Assets/Pictures/Logos/converse.png" alt="Converse Logo" class="brand-logo"></div>
+                <div class="logo-container"><img src="../Assets/Pictures/Logos/underarmour.png" alt="UnderArmour Logo" class="brand-logo"></div>
+                <div class="logo-container"><img src="../Assets/Pictures/Logos/newbalance.png" alt="NewBalance Logo" class="brand-logo"></div>
+                <div class="logo-container"><img src="../Assets/Pictures/Logos/reebok.png" alt="Reebok Logo" class="brand-logo"></div>
+                <div class="logo-container"><img src="../Assets/Pictures/Logos/gucci.png" alt="Gucci Logo" class="brand-logo"></div>
+            </div>
+            <button class="arrow right-arrow">&#10095;</button> <!-- Right scroll button -->
+        </div>
+
+        <!-- Special Offers Banner -->
+        <div class="offers-banner">
+            <i class="fas fa-gift"></i> <!-- Gift icon for the banner top -->
+            <h1>Special Offers</h1>
+            <p>Limited Edition Drops and Exclusive Discounts up to 50%</p>
+        </div>
+        
+        <!-- Scrollable Size Promotions Section -->
+        <div class="size-promotions-container">
+            <button class="scroll-btn left" onclick="scrollLeft()">&#10094;</button> <!-- Left scroll button -->
+            <div class="size-promotions-wrapper">
+                <div class="size-promotions">
+                    <!-- Sneaker the Weekend -->
+                    <div class="promo-box">
+                        <img src="../Assets/Pictures/Offers/image14a.png" alt="Weekend Sale" class="promo-image">
+                    </div>
+                    <!-- B2G1 -->
+                    <div class="promo-box">
+                        <img src="../Assets/Pictures/Offers/image14b.png" alt="Buy 2 Get 1 Free" class="promo-image">
+                    </div>
+                    <!-- Be First in Line -->
+                    <div class="promo-box">
+                        <img src="../Assets/Pictures/Offers/image14c.png" alt="Pre-Order" class="promo-image">
+                    </div>
+                    <!-- Spin Your Luck -->
+                    <div class="promo-box">
+                        <img src="../Assets/Pictures/Offers/image14d.png" alt="Spin Your Luck" class="promo-image">
+                    </div>
+                    <!-- Welcome Offer -->
+                    <div class="promo-box">
+                        <img src="../Assets/Pictures/Offers/image14e.png" alt="Welcome Offer" class="promo-image">
+                    </div>
+                    <!-- Cashback Offers -->
+                    <div class="promo-box">
+                        <img src="../Assets/Pictures/Offers/image14f.png" alt="Cashback Offers" class="promo-image">
+                    </div>
+                </div>
+            </div>
+            <button class="scroll-btn right" onclick="scrollRight()">&#10095;</button> <!-- Right scroll button -->
+        </div>
+        <!-- Shop Deals Button -->
+        <a href="../OffersPage/Offers.html" class="shop-deals-btn">Shop Deals</a> <!-- Link to Offers Page -->
+
+        <!-- Newly Released Collections Section -->
+        <div class="new-collections-section">
+            <h2>Newly Released Collections</h2>
+            
+            <!-- Container for the 4 rectangles (with 2 rectangles per row) -->
+            <div class="collections-container">
+                <div class="collection-item">
+                    <div class="image-carousel" id="carousel-1"> <!-- Collection of Images -->
+                        <img src="../Assets/Pictures/Shoes/Nike/Pegasus/image1a.png" alt="Collection 1a" class="carousel-image active">
+                        <img src="../Assets/Pictures/Shoes/Nike/Pegasus/image1b.png" alt="Collection 1b" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Pegasus/image1c.png" alt="Collection 1c" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Pegasus/image1d.png" alt="Collection 1d" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Pegasus/image1e.png" alt="Collection 1e" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Pegasus/image1f.png" alt="Collection 1f" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Pegasus/image1g.png" alt="Collection 1g" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Pegasus/image1h.png" alt="Collection 1h" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Pegasus/image1i.png" alt="Collection 1i" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Pegasus/image1j.png" alt="Collection 1g" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Pegasus/image1k.png" alt="Collection 1k" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Pegasus/image1l.png" alt="Collection 1l" class="carousel-image">
+                    </div>
+                    
+                    <div class="collection-text">
+                        <h2>Pegasus</h2>
+                        <p>"Unmatched comfort, built for speed."</p>
+                        <!-- Directs to the Pegasus shoes of the New and Featured page under the shop page -->
+                        <a href="../ShopPage/Shop.html?filter=new-featured&collection=pegasus" class="shop-button">SHOP NOW</a> 
+                    </div>
+                </div>
+                <div class="collection-item">
+                    <div class="image-carousel" id="carousel-2"> <!-- Collection of Images -->
+                        <img src="../Assets/Pictures/Shoes/Nike/Kyrie/image2a.png" alt="Collection 2a" class="carousel-image active">
+                        <img src="../Assets/Pictures/Shoes/Nike/Kyrie/image2b.png" alt="Collection 2b" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Kyrie/image2c.png" alt="Collection 2c" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Kyrie/image2d.png" alt="Collection 2d" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Kyrie/image2e.png" alt="Collection 2e" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Kyrie/image2f.png" alt="Collection 2f" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Kyrie/image2g.png" alt="Collection 2g" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Kyrie/image2h.png" alt="Collection 2h" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Kyrie/image2i.png" alt="Collection 2i" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Kyrie/image2j.png" alt="Collection 2j" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Kyrie/image2k.png" alt="Collection 2k" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Kyrie/image2l.png" alt="Collection 2l" class="carousel-image">
+                    </div>
+                    <div class="collection-text">
+                        <h2>Kyrie</h2>
+                        <p>"Agility meets precision on the court."</p>
+                        <!-- Directs to the Kyrie shoes of the New and Featured page under the shop page -->
+                        <a href="../ShopPage/Shop.html?filter=new-featured&collection=kyrie" class="shop-button">SHOP NOW</a>
+                    </div>
+                </div>
+                
+                <div class="collection-item">
+                    <div class="image-carousel" id="carousel-3"> <!-- Collection of Images -->
+                        <img src="../Assets/Pictures/Shoes/Nike/AirMax/image3a.png" alt="Collection 3a" class="carousel-image active">
+                        <img src="../Assets/Pictures/Shoes/Nike/AirMax/image3b.png" alt="Collection 3b" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/AirMax/image3c.png" alt="Collection 3c" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/AirMax/image3d.png" alt="Collection 3d" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/AirMax/image3e.png" alt="Collection 3e" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/AirMax/image3f.png" alt="Collection 3f" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/AirMax/image3g.png" alt="Collection 3g" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/AirMax/image3h.png" alt="Collection 3h" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/AirMax/image3i.png" alt="Collection 3i" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/AirMax/image3j.png" alt="Collection 3g" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/AirMax/image3k.png" alt="Collection 3k" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/AirMax/image3l.png" alt="Collection 3l" class="carousel-image">
+                    </div>
+                    <div class="collection-text">
+                        <h2>AirMax</h2>
+                        <p>"Game-Changing tech, unstoppable plays."</p>
+                        <!-- Directs to the AirMax shoes of the New and Featured page under the shop page -->
+                        <a href="../ShopPage/Shop.html?filter=new-featured&collection=airmax" class="shop-button">SHOP NOW</a>
+                    </div>
+                </div>
+                
+                <div class="collection-item">
+                    <div class="image-carousel" id="carousel-4"> <!-- Collection of Images -->
+                        <img src="../Assets/Pictures/Shoes/Nike/Vomero/image4a.png" alt="Collection 4a" class="carousel-image active">
+                        <img src="../Assets/Pictures/Shoes/Nike/Vomero/image4b.png" alt="Collection 4b" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Vomero/image4c.png" alt="Collection 4c" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Vomero/image4d.png" alt="Collection 4d" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Vomero/image4e.png" alt="Collection 4e" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Vomero/image4f.png" alt="Collection 4f" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Vomero/image4g.png" alt="Collection 4g" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Vomero/image4h.png" alt="Collection 4h" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Vomero/image4i.png" alt="Collection 4i" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Vomero/image4j.png" alt="Collection 4j" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Vomero/image4k.png" alt="Collection 4k" class="carousel-image">
+                        <img src="../Assets/Pictures/Shoes/Nike/Vomero/image4l.png" alt="Collection 4l" class="carousel-image">
+                    </div>
+                    <div class="collection-text">
+                        <h2>Vomero</h2>
+                        <p>"Classic style, reborn for today."</p>
+                        <!-- Directs to the Vomero shoes of the New and Featured page under the shop page -->
+                        <a href="../ShopPage/Shop.html?filter=new-featured&collection=vomero" class="shop-button">SHOP NOW</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer Section-->
+        <footer>
+            <div class="footer-container">
+                <!-- Contact Us -->
+                <div class="footer-section">
+                  <h3>Contact Us</h3>
+                  <div class="contact-info">
+                    <div class="contact-item">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>No.100, Wata Mawatha</span>
+                    </div>
+                    <div class="contact-item">
+                      <i class="fas fa-phone-alt"></i>
+                      <span>+94 706 334 422</span>
+                    </div>
+                    <div class="contact-item">
+                      <i class="fas fa-envelope"></i>
+                      <span>info@culturekicks.com</span>
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- Opening Hours -->
+                <div class="footer-section">
+                  <h3>Opening Hours</h3>
+                  <div class="opening-hours">
+                    <span>Mon - Fri: 9:00 AM - 6:00 PM</span>
+                    <span>Sat - Sun: 10:00 AM - 7:00 PM</span>
+                  </div>
+                </div>
+        
+                <!-- Follow Us -->
+                <div class="footer-section">
+                  <h3>Follow Us</h3>
+                  <div class="social-icons">
+                      <a href="https://instagram.com" aria-label="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                      <a href="https://facebook.com" aria-label="facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                      <a href="https://tiktok.com" aria-label="tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
+                  </div>
+                </div>
+        
+                <!-- Payment Methods -->
+                <div class="footer-section">
+                  <h3>Payment Methods</h3>
+                  <div class="payment-icons">
+                      <i class="fab fa-cc-visa"></i>
+                      <i class="fab fa-cc-paypal"></i>
+                      <i class="fab fa-cc-mastercard"></i>
+                      <i class="fab fa-cc-apple-pay"></i>
+                  </div>
+                </div>
+            </div>
+        
+            <!-- Newsletter Section -->
+            <div class="newsletter">
+                <h3>Subscribe to our Newsletter</h3>
+                <input type="email" aria-label="Email" placeholder="Enter your email" > <!-- PlaceHolder for Email Entering -->
+                <button>Subscribe</button>
+            </div>
+        
+            <!-- Footer copyright -->
+            <div class="footer-bottom">
+                <p>2025 CultureKicks All Rights Reserved</p>
+            </div>
+        </footer>
+        <button id="backToTopBtn" title="Go to top">
+            <i class="fas fa-arrow-up"></i> <!-- Font Awesome icon -->
+        </button>   
+    <script src= "index.js"></script>
+    </body>
+</html>
