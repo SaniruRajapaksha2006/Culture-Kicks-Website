@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | Culture Kicks</title>
+    <link rel="icon" href="../Assets/Pictures/Logos/Logo4.png" type="image/x-icon">
+    <link rel="stylesheet" href="Signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="signup-container">
+        <!-- Left Side - Brand Showcase -->
+        <div class="brand-side">
+            <div class="brand-overlay"></div>
+            <div class="brand-content">
+                <img src="../Assets/Pictures/Logos/Logo4.png" alt="Culture Kicks Logo" class="logo">
+                <h2>JOIN THE CULTURE</h2>
+                <p>Get access to exclusive drops, member pricing, and sneakerhead perks</p>
+                <div class="sneaker-display">
+                    <img src="../Assets/Pictures/AboutUs/sneaker3.png" alt="Premium Sneakers">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right Side - Signup Form -->
+        <div class="signup-side">
+            <div class="signup-box">
+                <div class="progress-bar">
+                    <div class="progress-step step1 active"></div>
+                    <div class="progress-step step2"></div>
+                </div>
+                
+                <h1>CREATE YOUR ACCOUNT</h1>
+                <p class="subtitle">Become part of the Culture Kicks community</p>
+                
+                <form id="signupForm">
+                    <!-- Step 1: Personal Details -->
+                    <div id="step1" class="form-step active">
+                        <div class="form-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="fullname" name="fullname" placeholder=" " >
+                            <label for="fullname">Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder=" " >
+                            <label for="email">Email Address</label>
+                            <p id="emailError" class="error-message"></p>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <input type="text" id="street" name="street" placeholder=" " >
+                                <label for="street">Street Address</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group city-field">
+                                <i class="fas fa-city"></i>
+                                <input type="text" id="city" name="city" placeholder=" " >
+                                <label for="city">City</label>
+                            </div>
+                            <div class="form-group state-field">
+                                <i class="fas fa-map-pin"></i>
+                                <input type="text" id="state" name="state" placeholder=" " >
+                                <label for="state">State</label>
+                            </div>
+                            <div class="form-group zip-field">
+                                <i class="fas fa-mail-bulk"></i>
+                                <input type="text" id="zipcode" name="zipcode" placeholder=" " >
+                                <label for="zipcode">Zip Code</label>
+                            </div>
+                        </div>
+                        <button type="button" id="next1" class="next-btn">
+                            <span>CONTINUE</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Step 2: Password -->
+                    <div id="step2" class="form-step">
+                        <div class="form-group">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="password" name="password" placeholder=" " >
+                            <label for="password">Password</label>
+                            <div class="password-strength">
+                                <div class="strength-bar"></div>
+                                <div class="strength-bar"></div>
+                                <div class="strength-bar"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder=" " >
+                            <label for="confirmPassword">Confirm Password</label>
+                            <p id="passwordError" class="error-message"></p>
+                        </div>
+                        
+                        <div class="terms">
+                            <input type="checkbox" aria-label="CheckBox" id="terms" >
+                            <label1 for="terms">I agree to the Terms of Service and Privacy Policy></label1>
+                        </div>
+                        
+                        <button type="submit" class="signup-btn">
+                            <span>COMPLETE SIGN UP</span>
+                            <i class="fas fa-check"></i>
+                        </button>
+                        <button type="button" id="back1" class="back-btn">
+                            <i class="fas fa-arrow-left"></i>
+                            <span>BACK</span>
+                        </button>
+                    </div>
+                </form>
+                
+                <p class="login-text">Already part of the culture? <a href="../LoginPage/Login.html" class="login-link">LOGIN</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="Signup.js"></script>
+</body>
+</html>

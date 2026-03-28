@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Culture Kicks</title>
+    <link rel="icon" href="../Assets/Pictures/Logos/Logo4.png" type="image/x-icon">
+    <link rel="stylesheet" href="Login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Left Side - Brand Showcase -->
+        <div class="brand-side" aria-label="Shop text">
+            <div class="brand-overlay"></div>
+            <div class="brand-content">
+                <img src="../Assets/Pictures/Logos/Logo4.png" alt="Culture Kicks Logo" class="logo">
+                <h2>STEP INTO THE CULTURE</h2>
+                <p>Access your collection of exclusive kicks and member benefits</p>
+                <div class="sneaker-display">
+                    <img src="../Assets/Pictures/AboutUs/sneaker2.png" alt="Premium Sneakers">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right Side - Login Form -->
+        <div class="login-side" aria-label="Login Form">
+            <div class="login-box">
+                <h1>WELCOME BACK</h1>
+                <p class="subtitle">Sign in to your Culture Kicks account</p>
+                
+                <form id="loginForm">
+                    <div class="form-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="username" name="username" placeholder=" ">
+                        <label for="username">Username or Email</label>
+                    </div>
+                    <div class="form-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" name="password" placeholder=" ">
+                        <label for="password">Password</label>
+                    </div>
+                    
+                    <div class="options">
+                        <label class="remember-me">
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+                    
+                    <button type="submit" class="login-btn">
+                        <span>LOGIN</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    
+                    <div class="social-login">
+                        <p>Or login with</p>
+                        <div class="social-icons">
+                            <a href="https://google.com" aria-label="google" class="social-icon google"><i class="fab fa-google"></i></a>
+                            <a href="https://facebook.com" aria-label="facebook" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com" aria-label="twitter" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    
+                    <p class="signup-text">Don't have an account? <a href="../SignupPage/Signup.html" class="signup-link">SIGN UP</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="Login.js"></script>
+</body>
+</html>

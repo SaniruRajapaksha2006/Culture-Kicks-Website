@@ -1,0 +1,327 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.signup-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Brand Side (Left) */
+.brand-side {
+    flex: 1;
+    background: url('assets/sneaker-wallpaper-2.jpg') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.brand-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(106, 17, 203, 0.85), rgba(37, 117, 252, 0.85));
+}
+
+.brand-content {
+    position: relative;
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    max-width: 500px;
+}
+
+.brand-content .logo {
+    width: 180px;
+    margin-bottom: 2rem;
+}
+
+.brand-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.brand-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.sneaker-display img {
+    width: 350px;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+/* Signup Side (Right) */
+.signup-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 2rem;
+}
+
+.signup-box {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    border-radius: 15px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Progress Bar */
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 10px;
+}
+
+.progress-step {
+    width: 30px;
+    height: 6px;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.progress-step.active {
+    background-color: #6a11cb;
+    width: 40px;
+}
+
+/* Header */
+.signup-box h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.signup-box .subtitle {
+    color: #666;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Form Styles */
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.form-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 1rem;
+}
+
+/* Updated Form Row Layout */
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 1.5rem;
+}
+
+/* City field - standard width */
+.form-group.city-field {
+    flex: 2;
+}
+
+/* State field - increased width */
+.form-group.state-field {
+    flex: 1.5;
+    min-width: 120px;
+}
+
+/* Zip code field - increased width */
+.form-group.zip-field {
+    flex: 1.5;
+    min-width: 120px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    font-size: 0.95rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #6a11cb;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(106, 17, 203, 0.1);
+}
+
+label {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000;
+    font-size: 0.9rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+    padding: 0 5px;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 0.75rem;
+    color: #6a11cb;
+    background-color: white;
+}
+
+/* Password Strength */
+.password-strength {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.strength-bar {
+    height: 4px;
+    flex: 1;
+    background-color: #e0e0e0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Buttons */
+.next-btn, .signup-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.next-btn:hover, .signup-btn:hover {
+    background: linear-gradient(135deg, #5a0db5, #1a65e5);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(37, 117, 252, 0.3);
+}
+
+.back-btn {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    color: #666;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.back-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Terms */
+.terms {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.terms input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.terms a {
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Error Messages */
+.error-message {
+    color: #ff6b6b;
+    font-size: 0.75rem;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Login Link */
+.login-text {
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+}
+
+.login-link {
+    color: #6a11cb;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-link:hover {
+    color: #2575fc;
+}
+
