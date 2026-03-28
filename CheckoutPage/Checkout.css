@@ -1,0 +1,176 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.checkout-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #37392e;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.progress-indicator {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.progress-indicator .step {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: #EEE5E5;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-weight: bold;
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.progress-indicator .step.active {
+    background-color: #19647E;
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.btn-primary {
+    background-color: #19647E;
+    color: #EEE5E5;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #28AFB0;
+}
+
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    flex-wrap: wrap;
+}
+
+.order-item span:first-child {
+    flex: 2;
+    min-width: 60%;
+}
+
+.order-item span:last-child {
+    flex: 1;
+    text-align: right;
+    min-width: 30%;
+}
+
+
+#order-items {
+    margin-bottom: 20px;
+}
+
+#order-items div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+#order-total {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#paypalApplePayMessage p {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: #555;
+}
+
+.confirmation {
+    text-align: center;
+    padding: 20px;
+}
+
+.confirmation h2 {
+    color: #28a745;
+}
+
+.confirmation p {
+    font-size: 18px;
+    color: #555;
+}

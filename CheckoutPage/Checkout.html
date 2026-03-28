@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Culture Kicks</title>
+    <link rel="icon" href="../Assets/Pictures/Logos/Logo4.png" type="image/x-icon">
+    <link rel="stylesheet" href="Checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="checkout-container">
+        <h1>CHECKOUT</h1>
+
+        <!-- Progress Indicator -->
+        <div class="progress-indicator">
+            <div class="step" id="step1">Order Summary</div>
+            <div class="step" id="step2">Shipping</div>
+            <div class="step" id="step3">Payment</div>
+            <div class="step" id="step4">Confirmation</div>
+        </div>
+
+        <!-- Order Summary Section -->
+        <div class="order-summary" id="order-summary">
+            <h2>Order Summary</h2>
+            <div id="order-items"></div>
+            <div id="order-total">
+                <p>Total: Rs.<span id="total-amount">0.00</span></p>
+            </div>
+            <button id="proceed-to-shipping" class="btn-primary" type="button">Proceed to Shipping</button>
+        </div>
+
+        <!-- Shipping Address Section -->
+        <div class="shipping-address" id="shipping-address" style="display: none;">
+            <h2>Shipping Address</h2>
+            <form id="shipping-form">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" >
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" >
+                </div>
+                <div class="form-group">
+                    <label for="street">Street *</label>
+                    <input type="text" id="street" name="street" >
+                </div>
+                <div class="form-group">
+                    <label for="city">City *</label>
+                    <input type="text" id="city" name="city" >
+                </div>
+                <div class="form-group">
+                    <label for="state">State *</label>
+                    <input type="text" id="state" name="state" >
+                </div>
+                <div class="form-group">
+                    <label for="zipCode">Zip Code *</label>
+                    <input type="text" id="zipCode" name="zipCode" >
+                </div>
+                <button type="submit" class="btn-primary">Continue to Payment</button>
+            </form>
+        </div>
+
+        <!-- Payment Section -->
+        <div class="payment-method" id="payment-method" style="display: none;">
+            <h2>Payment Method</h2>
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="paymentMethod">Payment Method *</label>
+                    <select id="paymentMethod" name="paymentMethod" >
+                        <option value="">Select a payment method</option>
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">MasterCard</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="applepay">Apple Pay</option>
+                    </select>
+                </div>
+
+                <!-- Card Number Field (Visible for Visa/MasterCard) -->
+                <div id="cardNumberField" class="form-group" style="display: none;">
+                    <label for="cardNumber">Card Number *</label>
+                    <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9101 1123" maxlength="19" >
+                </div>
+
+                <!-- Expiry Date and CVV Fields (Visible for Visa/MasterCard) -->
+                <div id="cardDetails" style="display: none;">
+                    <div class="form-group">
+                        <label for="expiryDate">Expiry Date *</label>
+                        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" maxlength="5" >
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV *</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="3" >
+                    </div>
+                </div>
+
+                <!-- PayPal/Apple Pay Message -->
+                <div id="paypalApplePayMessage" style="display: none;">
+                    <p>You will be redirected to PayPal/Apple Pay to complete your payment.</p>
+                </div>
+
+                <button type="submit" class="btn-primary">Confirm Order</button>
+            </form>
+        </div>
+
+        <!-- Confirmation Section -->
+        <div class="confirmation" id="confirmation" style="display: none;">
+            <h2>Order Confirmed!</h2>
+            <p>Thank you for your purchase. Your order details: </p>
+            <div id="confirmation-items" style="margin: 20px 0;"></div>
+            <p>You will be redirected to the home page shortly.</p>
+        </div>
+    </div>
+
+    <script src="Checkout.js"></script>
+</body>
+</html>
