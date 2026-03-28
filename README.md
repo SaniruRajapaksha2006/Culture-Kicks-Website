@@ -251,7 +251,7 @@ Contributions are welcome! Here's how you can help:
 
 **Your Name**
 - GitHub: [@SaniruRajapaksha2006](https://github.com/SaniruRajapaksha2006)
-- Project Link: https://github.com/SaniruRajapaksha2006/Culture-Kicks_Website
+- Project Link: https://github.com/SaniruRajapaksha2006/Culture-Kicks-Website
 - Email: sanirurajapaksha@icloud.com
 
 ---
