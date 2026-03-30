@@ -1,5 +1,14 @@
 # 👟 Culture Kicks - Sneaker E-Commerce Website
 
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26.svg)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6.svg)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![XML](https://img.shields.io/badge/XML-FF6600.svg)](https://www.w3.org/XML/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-brightgreen.svg)](https://pages.github.com/)
+[![Responsive](https://img.shields.io/badge/Responsive-Yes-brightgreen.svg)]()
+[![localStorage](https://img.shields.io/badge/localStorage-Data%20Storage-blue.svg)]()
+
 A modern, responsive e-commerce website for sneaker enthusiasts featuring product browsing, shopping cart, user authentication, and special offers.
 
 ---
